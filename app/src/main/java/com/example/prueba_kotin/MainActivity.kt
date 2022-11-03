@@ -1,37 +1,29 @@
 package com.example.prueba_kotin
 
+
 import android.os.Bundle
 import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.prueba_kotin.ui.theme.Prueba_kotinTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(androidx.core.R.layout.notification_action)
-
-        var fecha="hola mundo"
-        println(fecha)
-
+        var juan: Deportista = Deportista("juan",1.8f,94.6f,22)
+        println(juan.descansar())
+        var luisa: Ciclista = Ciclista("juan",1.7f,8.6f,27,2,50f)
+        println(luisa.pedalear())
     }
-}
-
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    Prueba_kotinTheme {
-        Greeting("Android")
+    /*
+    @Composable
+    fun Greeting(name: String) {
+        Text(text = "Hello $name!")
     }
+
+    @Preview(showBackground = true)
+    @Composable
+    fun DefaultPreview() {
+        Prueba_kotinTheme {
+            Greeting("Android")
+        }
+    }*/
 }
