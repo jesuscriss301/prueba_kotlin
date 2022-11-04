@@ -11,7 +11,7 @@ class MainActivity : ComponentActivity() {
         var juan: Deportista = Deportista("juan",1.8f,94.6f,22)
         println(juan.descansar())
         var luisa: Ciclista = Ciclista("juan",1.7f,8.6f,27,2,50f)
-        println(luisa.pedalear())
+        println(luisa.descansar())
     }
     /*
     @Composable
