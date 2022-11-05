@@ -6,7 +6,7 @@ class Artista {
     private var nombreArtistico:String=""
     private var fechaNacimiento: String=""
     private var grupoMusical:String="Solista"
-    private var ocupacion:String=""
+    private var ocupacion:String="Cantante"
 
     constructor(
         nombreReal: String,
@@ -26,6 +26,12 @@ class Artista {
         this.nombreArtistico = nombreArtistico
         this.grupoMusical = grupoMusical
         this.ocupacion = ocupacion
+        this.nombreReal=nombreReal
+    }
+
+    constructor(nombreReal: String,nombreArtistico: String, fechaNacimiento: String) {
+        this.nombreArtistico = nombreArtistico
+        this.fechaNacimiento = fechaNacimiento
         this.nombreReal=nombreReal
     }
 

@@ -1,5 +1,4 @@
-package com.example.prueba_kotin
-import com.example.prueba_kotin.modelo.Artista
+package com.example.prueba_kotin.modelo
 
 class Song {
     /*
@@ -36,6 +35,7 @@ class Song {
     fun descripcionCancion():String {
         return "${getTitulo()}, interpretada por ${getArtista().getNombreArtistico()}, se lanzó en ${getAñoPublicacion()}."
     }
+
 
 
 }
