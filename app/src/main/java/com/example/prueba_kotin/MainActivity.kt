@@ -11,27 +11,17 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(androidx.core.R.layout.notification_action)
 
+        //crear artista
         var artista:Artista=Artista("Juan Esteban Aristizábal Vásquez",
             "Juanes","09/08/1972")
+        //crear canción
         var cancion:Song=Song("La camisa negra",artista,2004,177000)
 
         println(artista)
         println("popularidad es : ${cancion.getPopular()} con ${cancion.getReproducciones()} reproduciones")
         println(cancion.descripcionCancion())
 
-        
-    }
-    /*
-    @Composable
-    fun Greeting(name: String) {
-        Text(text = "Hello $name!")
+
     }
 
-    @Preview(showBackground = true)
-    @Composable
-    fun DefaultPreview() {
-        Prueba_kotinTheme {
-            Greeting("Android")
-        }
-    }*/
 }
